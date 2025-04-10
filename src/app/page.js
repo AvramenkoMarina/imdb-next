@@ -1,5 +1,7 @@
 import Results from '@/components/Results'
 
+export const revalidate = 10000
+
 export default async function Home({ searchParams }) {
 	const genre = searchParams.genre || 'fetchTrending'
 	const options = {
